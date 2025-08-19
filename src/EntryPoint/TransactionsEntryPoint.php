@@ -50,19 +50,19 @@ class TransactionsEntryPoint extends AbstractEntryPoint
      * @return Transactions
      */
     public function find(
-        Transaction $transaction = null,
+        ?Transaction $transaction = null,
         $amountFrom = null,
         $amountTo = null,
-        DateTime $settlesAtFrom = null,
-        DateTime $settlesAtTo = null,
-        DateTime $createdAtFrom = null,
-        DateTime $createdAtTo = null,
-        DateTime $updatedAtFrom = null,
-        DateTime $updatedAtTo = null,
+        ?DateTime $settlesAtFrom = null,
+        ?DateTime $settlesAtTo = null,
+        ?DateTime $createdAtFrom = null,
+        ?DateTime $createdAtTo = null,
+        ?DateTime $updatedAtFrom = null,
+        ?DateTime $updatedAtTo = null,
         $onBehalfOf = null,
-        Pagination $pagination = null,
-        DateTime $completedAtFrom = null,
-        DateTime $completedAtTo = null,
+        ?Pagination $pagination = null,
+        ?DateTime $completedAtFrom = null,
+        ?DateTime $completedAtTo = null,
         $scope = null
     ) {
         if (null === $transaction) {
